@@ -170,6 +170,7 @@ export class TinderCardDirective implements OnInit, OnDestroy {
       this.renderer.setElementStyle(this.overlayElement, "transition", "opacity 0.4s ease");
       this.renderer.setElementStyle(this.overlayElement, "opacity", "0.5");
       this.renderer.setElementStyle(this.overlayElement, "background-color", this._overlay[params.like ? "like" : "dislike"].backgroundColor);
+      this.renderer.setElementStyle(this.overlayElement, "background-image", this._overlay[params.like ? "like" : "dislike"].backgroundImage);
       this.destroy(200);
     });
   }
